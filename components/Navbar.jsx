@@ -43,19 +43,6 @@ const Navbar = () => {
         height={33}
         objectFit="contain"
       />
-      {toggleMenu ? (
-        <RiCloseLine
-          color="#fff"
-          size={27}
-          onClick={() => setToggleMenu(false)}
-        />
-      ) : (
-        <RiMenu3Line
-          color="#fff"
-          size={27}
-          onClick={() => setToggleMenu(true)}
-        />
-      )}
       <ul className={styles.links}>
         <Menu />
       </ul>
