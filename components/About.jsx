@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <div className={styles.aboutContainer} id="about">
+    <section className={styles.aboutContainer} id="about">
       <SectionHeader title="Who we are" grayText="About us" />
       <div className={styles.aboutTop}>
         <div className={styles.left}>
@@ -37,7 +37,7 @@ const About = () => {
           <Image src={img2} alt="wood product" />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
