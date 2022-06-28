@@ -1,0 +1,35 @@
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 64px 100px;
+}
+
+.htcBtn {
+  display: flex;
+  justify-content: center;
+
+  p {
+    padding: 14px 23px;
+    background: #daa520;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .imgContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .imgContainer {
+    flex-wrap: wrap;
+    margin: 40px 40px;
+  }
+}
