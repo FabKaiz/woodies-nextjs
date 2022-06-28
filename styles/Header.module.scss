@@ -48,6 +48,10 @@
 @media screen and (min-width: 1350px) {
   .headerContainer {
     justify-content: space-evenly;
+
+    h1 {
+      max-width: none;
+    }
   }
 }
 
