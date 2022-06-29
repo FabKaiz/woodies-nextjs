@@ -19,10 +19,10 @@ const Menu = () => (
       <a href="#hiw">How it works</a>
     </li>
     <li>
-      <a href="#Categories">Categories</a>
+      <a href="#categories">Categories</a>
     </li>
     <li>
-      <a href="#Testimony">Testimony</a>
+      <a href="#testimony">Testimony</a>
     </li>
     <li>
       <ButtonTransparent text="SIGN UP" />
