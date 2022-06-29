@@ -1,0 +1,32 @@
+.categoriesContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 100px;
+  max-width: 1010px;
+}
+
+@media screen and (min-width: 2000px) {
+  .productContainer {
+    max-width: 1350px;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .productContainer {
+    max-width: 675px;
+    margin-right: 0;
+    margin-left: 56px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .productContainer {
+    max-width: 280px;
+    margin: 0;
+  }
+}
