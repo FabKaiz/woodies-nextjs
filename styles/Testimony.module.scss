@@ -1,0 +1,191 @@
+.testimonyContainer {
+  display: flex;
+  margin: 0 100px;
+  justify-content: center;
+}
+
+.testimonyLeft {
+  display: flex;
+
+  & > div {
+    margin-right: 35px;
+  }
+}
+
+.testimonyCard {
+  border: 1px solid #a8dcec;
+  padding: 54px 16px;
+  border-top-right-radius: 83px;
+  border-bottom-left-radius: 83px;
+
+  .authorText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3e3f43;
+    max-width: 352px;
+  }
+
+  .authorContainer {
+    display: flex;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+    }
+
+    .authorInfo {
+      p {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: #afafaf;
+        margin: 0;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.star {
+  color: #ffc107;
+  width: 24px;
+  height: 24px;
+}
+
+.arrowContainer {
+  height: 20px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+
+  .arrowPrev {
+    cursor: pointer;
+    margin-left: 42px;
+    color: #c4c4c4;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 10px;
+      left: -40px;
+      content: ' ';
+      width: 32px;
+      height: 1px;
+      background-color: #c4c4c4;
+    }
+
+    &::after {
+      content: '';
+      width: 3px;
+      height: 3px;
+      border-style: solid;
+      border-top: 1.5px solid #c4c4c4;
+      border-left: 1.5px solid #c4c4c4;
+      transform: rotate(-45deg);
+      border-color: #c4c4c4 transparent transparent #c4c4c4;
+      position: absolute;
+      top: 10px;
+      margin-top: -2.5px;
+      left: -40px;
+    }
+  }
+
+  .arrowNext {
+    margin-right: 43px;
+    color: #000;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 10px;
+      left: 40px;
+      content: ' ';
+      width: 32px;
+      height: 1px;
+      background-color: #000;
+    }
+
+    &::after {
+      content: '';
+      width: 3px;
+      height: 3px;
+      border-style: solid;
+      border-top: 1.5px solid #000;
+      border-left: 1.5px solid #000;
+      transform: rotate(135deg);
+      border-color: #000 transparent transparent #000;
+      position: absolute;
+      top: 10px;
+      margin-top: -2.5px;
+      left: 66px;
+    }
+  }
+}
+
+.sliderContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  // parent div
+  & > div {
+    height: 8px;
+    width: 184px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+
+    // childs div
+    & > div {
+      width: 40px;
+      height: 8px;
+      border-radius: 8px;
+      background-color: #e5e5e5;
+      cursor: pointer;
+    }
+  }
+  .sliderActive {
+    background-color: #daa520;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .testimonyContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .testimonyLeft {
+      justify-content: center;
+    }
+
+    .testimonyRight {
+      margin-top: 2rem;
+      max-width: 450px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .testimonyContainer {
+    margin: 0 50px;
+
+    .testimonyLeft {
+      & > div {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .testimonyContainer {
+    margin: 0 25px;
+  }
+}
