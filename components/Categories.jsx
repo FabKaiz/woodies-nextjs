@@ -10,7 +10,7 @@ import electronics from '../public/assets/categories5.png'
 
 const Categories = () => {
   return (
-    <section>
+    <section id='categories'>
       <SectionHeader title="What we have" grayText="Categories" />
       <div className={styles.categoriesContainer}>
         <div className={styles.productContainer}>
