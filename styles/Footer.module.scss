@@ -62,10 +62,90 @@
   }
 }
 
+.footerLinks {
+  max-width: 63%;
+  margin-left: 107px;
+  .line {
+    height: 1px;
+    width: -webkit-fill-available;
+    background-color: #c4c4c4;
+    margin-top: 34px;
+    margin-bottom: 24px;
+  }
+
+  .linksContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #333333;
+        margin: 0;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #8d8d8d;
+        margin: 0;
+        margin-top: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8d8d8d;
+    margin: 0;
+    padding-top: 45px;
+    padding-bottom: 24px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .inputContainer {
     input {
       width: 250px;
+    }
+  }
+
+  .footer {
+    background-image: linear-gradient(
+        338deg,
+        rgba(0, 0, 0, 0.22),
+        rgba(0, 0, 0, 0)
+      ),
+      url('../public/assets/footerBg.png');
+  }
+
+  .footerLinks {
+    .linksContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .col {
+        width: fit-content;
+
+        p {
+          color: rgba(0, 0, 0, 0.659);
+        }
+      }
     }
   }
 }
@@ -85,6 +165,38 @@
     margin-top: 1.5rem;
     justify-content: center;
   }
+
+  .footerLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+    max-width: none;
+
+    .line {
+      margin-bottom: 3rem;
+    }
+
+    .linksContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 2rem;
+      column-gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .copyright {
+      color: #fff;
+    }
+  }
+}
+@media screen and (max-width: 495px) {
+  .footerLinks {
+    .linksContainer {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -103,6 +215,14 @@
     input {
       max-width: 250px;
       min-width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .footerLinks {
+    .linksContainer {
+      grid-template-columns: 1fr;
     }
   }
 }
